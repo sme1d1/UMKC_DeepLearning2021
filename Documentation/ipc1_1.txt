@@ -5,7 +5,6 @@ UMKC Deep Learning 2021
 Python 2 and Python 3 have several differences:
 
 Python 2 is legacy software that was retired at the start of 2020. The code base is no longer maintained.
-Python 3 is maintained and many 
 
 In Python 2, integer division rounds down a calculation to the nearest whole number.
 Python2: 5/3 = 1 whereas in Python 3: 5/3 = 1.666667
