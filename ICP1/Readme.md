@@ -29,7 +29,7 @@ Additionally, Python 3 includes a string formatted in the string class str.forma
 2. Take two numbers from the user and perform arithmetic operations on them.
 
 #### My Code:
-![ICP1_1](https://github.com/sme1d1/UMKC_DeepLearning2021/blob/master/images/ipc1_1_sme1d1.png "ICP1_1")
+![ICP1_1](https://github.com/sme1d1/UMKC_DeepLearning2021/blob/master/images/icp1_1_sme1d1.PNG?raw=true "ICP1_1")
 
 My program assigns a user input string to 'name'. It then generates two random indices, x, and y, of the string to access. The characters of 'name' are assigned to a list 'name_list'. This was done because string objects don't support item assignment. Blank characters '' are assigned the 
 x and y indices of 'name_list'. A new string 'new_name' is then created from the characters in 'name_list'. This word is the original user-inputted name with the random two characters removed from it. This is then printed out in reverse.
@@ -41,7 +41,7 @@ The second part of the program takes two user-inputted integers then performs ad
 - Sample input: "I love playing with python"
 - Sample output: I love playing with pythons
 
-![ICP1_2](https://github.com/sme1d1/UMKC_DeepLearning2021/blob/master/images/ipc1_2_sme1d1.png "ICP1_2")
+![ICP1_2](https://github.com/sme1d1/UMKC_DeepLearning2021/blob/master/images/icp1_2_sme1d1.PNG?raw=true "ICP1_2")
 
 My program asks the user to input a string and replaces any instance of 'python' or 'Python' with 'pythons' and 'Pythons' respectively. 
 
