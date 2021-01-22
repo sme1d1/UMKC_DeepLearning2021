@@ -36,6 +36,8 @@ x and y indices of 'name_list'. A new string 'new_name' is then created from the
 
 The second part of the program takes two user-inputted integers then performs addition, multiplication, and division on the given integers. The sum, product, and quotient are printed. 
 
+![ICP1_1output](https://github.com/sme1d1/UMKC_DeepLearning2021/blob/master/images/icp1_1_output_sme1d1.PNG?raw=true "ICP1_output")
+
 #### 3.  Write a program that:
 1. Accepts a sentence and replace each occurrence of ‘python’ with ‘pythons’ without using regex
 - Sample input: "I love playing with python"
@@ -45,3 +47,4 @@ The second part of the program takes two user-inputted integers then performs ad
 
 My program asks the user to input a string and replaces any instance of 'python' or 'Python' with 'pythons' and 'Pythons' respectively. 
 
+![ICP1_2output](https://github.com/sme1d1/UMKC_DeepLearning2021/blob/master/images/icp1_2_output_sme1d1.PNG?raw=true "ICP1_2_output")
