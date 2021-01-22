@@ -20,12 +20,12 @@ Python 2 does not use parentheses for a print statement but Python 3 requires th
 Additionally, Python 3 includes a string formatted in the string class str.format(). 
 
 - ex: print("{} / {} = {}".format(8, 2, 8/2)) outputs "8 / 2 = 4".
-
+---
 #### 2. Write a python program for the following:
 1. Input the string “Python” as a list of characters from the console, delete at least 2 characters, reverse the resultant string and print it. 
 - Sample input: python
 - Sample output: ntyp
----
+
 2. Take two numbers from the user and perform arithmetic operations on them.
 
 #### My Code:
@@ -37,6 +37,7 @@ x and y indices of 'name_list'. A new string 'new_name' is then created from the
 The second part of the program takes two user-inputted integers then performs addition, multiplication, and division on the given integers. The sum, product, and quotient are printed. 
 
 ![ICP1_1output](https://github.com/sme1d1/UMKC_DeepLearning2021/blob/master/images/icp1_1_output_sme1d1.PNG?raw=true "ICP1_output")
+
 ---
 #### 3.  Write a program that:
 1. Accepts a sentence and replace each occurrence of ‘python’ with ‘pythons’ without using regex
