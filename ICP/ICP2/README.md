@@ -68,8 +68,13 @@ Appended file:
 
 ![ICP2_3_words](https://github.com/sme1d1/UMKC_DeepLearning2021/blob/master/images/icp2_3_words_output.PNG?raw=true "ICP2_1_out")
 
- 
+#### Learnings from the lesson 
 
+In this lesson, I gained a greater understanding of how for and while loops functioned. Additionally I understand how to iterate through and manipulate lists, as well as how to interact with text files through code.
+
+#### Issues with the lesson  
+
+I had the most issues with the third program and had a number of different failed attempts at the problem before I arrived at my solution. Originally I was working with a generated list from text file but was having difficulty extracting the words. I experimented with finding spaces and creating new lists through slicing, but had trouble getting the result I wanted. Adding the text to string and splitting it to a list solved my main issue.
 
 
 
