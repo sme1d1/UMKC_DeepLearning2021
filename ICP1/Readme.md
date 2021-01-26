@@ -1,4 +1,4 @@
-# IPC 1: Fun with Python
+# ICP 1: Fun with Python
 
 
 #### 1. State differences between Python 2 and Python 3 versions.
