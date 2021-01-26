@@ -49,3 +49,12 @@ The second part of the program takes two user-inputted integers then performs ad
 My program asks the user to input a string and replaces any instance of 'python' or 'Python' with 'pythons' and 'Pythons' respectively. 
 
 ![ICP1_2output](https://github.com/sme1d1/UMKC_DeepLearning2021/blob/master/images/icp1_2_output_sme1d1.PNG?raw=true "ICP1_2_output")
+
+#### Lessons learned from project and lesson
+
+I learned about the differences between Python 2 and 3. It was sunsetted a year ago, but I think this might have been more relevant in the past when programmers were in a transistion period between Python 2 and 3. Additionally, I learned quite a lot about basic python syntax. 
+
+#### Issues with project
+
+Python is new to me: I have a some knowledge of C and C# but I'm still relatively new to programming. This first assignment was a nice introduction to how Python programs are formatted. I'm sure it will take some time to translate the knowledge I have into a new language but so far this hasn't been too frustratring.
+
