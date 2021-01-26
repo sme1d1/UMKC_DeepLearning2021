@@ -1,4 +1,4 @@
-# IPC 2: Loops, List, Tuples, Functions in Python
+# ICP 2: Loops, List, Tuples, Functions in Python
 
 
 #### 1. Write a program, which reads height(feet.) of N students into a list and convert these heights to cm in a separate list:
