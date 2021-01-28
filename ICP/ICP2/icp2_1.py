@@ -18,7 +18,14 @@ def student_list(studentcount):
     count = 0
     for i in range(studentcount):
         count = count + 1
-        x = float(input("Input your #" + str(count) + " student's height in feet (ex. 4.2). "))
+        x = -10  # initialize num to negative
+
+        while x < 0:  # loop until a positive integer is entered
+            try:  # test user input
+                x = float(input("Input your #" + str(count) + " student's height in feet (ex. 4.2). "))
+            except ValueError:
+                print("Invalid input")
+
         my_heights.insert(i, x)  # add value to list
     return my_heights
 
@@ -36,8 +43,14 @@ def converttocm(listofstudentheights):
     return my_cmheights
 
 
-# take inputs, feed to functions, and print output
-n = int(input("Input how many students you have: "))
+# Get user input for non-negative integer
+n = -10  # initialize num to negative
+while n < 0:  # loop until a positive integer is entered
+    try:  # test user input
+        n = int(input("Input how many students you have: "))
+    except ValueError:
+        print("Invalid input")
+
 my_students = student_list(n)
 print("Student's height in feet:")
 print(my_students)
