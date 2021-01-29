@@ -19,6 +19,7 @@ with open('words.txt') as reader:
     bigstring = ''  # create a string to add out file text to
     wordcount = []  # create a list to store the word count
     countlist = []  # create a list to store the words concatenated with the word count
+
     for x in reader:
         bigstring += x  # add text to our string
     wordlist = bigstring.split()  # build a list by splitting our string
