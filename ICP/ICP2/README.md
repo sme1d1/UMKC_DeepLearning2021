@@ -8,6 +8,9 @@ N: No of students (Read input from the user)
 - Ex: L1: [5.2,5.4, 5.6, 6.1]
 - Output: [158.4, 164.5, 170.6, 185.9]
 
+#### Video link:
+https://youtu.be/-dIo0OQpJLs
+
 #### My Code:
 ![ICP2_1](https://github.com/sme1d1/UMKC_DeepLearning2021/blob/master/images/icp2_1_program1.PNG?raw=true "ICP2_1")
 ![ICP2_1](https://github.com/sme1d1/UMKC_DeepLearning2021/blob/master/images/icp2_1_program2.PNG?raw=true "ICP2_1")
@@ -32,6 +35,9 @@ Explanation:
 - Step 5) 2 is even; divide by 2 and obtain 1.
 - Step 6) 1 is odd; subtract 1 and obtain 0.
 
+#### Video Link:
+https://youtu.be/349_Okj0lCw
+
 #### My Code:
 ![ICP2_1_out](https://github.com/sme1d1/UMKC_DeepLearning2021/blob/master/images/icp2_2_program.PNG?raw=true "ICP2_1_out")
 
@@ -54,6 +60,10 @@ Output:
 - Learning: 1
 
 Note: Your program should work for any number of lines
+
+#### Video Link:
+https://youtu.be/7aQcCB-t7zg
+
 #### My Code:
 ![ICP2_1_out](https://github.com/sme1d1/UMKC_DeepLearning2021/blob/master/images/icp2_3_program.PNG?raw=true "ICP2_1_out") 
 
