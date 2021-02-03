@@ -10,15 +10,9 @@ Scott McElfresh sme1d1 Deep Learning 2021 2/3/2021
 """
 
 import requests
-import os
 from bs4 import BeautifulSoup
 
 page = requests.get("https://en.wikipedia.org/wiki/Deep_learning")  # specify our webpage
-
-webscrape = "webscrape"  # specify our text file name
-
-if not os.path.exists(webscrape):
-    file2 = open(webscrape + '.txt', 'a+', encoding='utf-8')  # create our text file
 
 with open('webscrape.txt', 'a') as writer:  # open our file to write to
     soup = BeautifulSoup(page.content, 'html.parser')
