@@ -17,7 +17,7 @@ class Employee:
     # create and initialize constructors for name, family, salary, and department
     def __init__(self, n, f, s, d):
         Employee.count += 1  # update employee count
-        Employee.salaryTotal = Employee.salaryTotal + s # update combined salary total
+        Employee.salaryTotal = Employee.salaryTotal + s  # update combined salary total
         self.name = n
         self.family = f
         self.salary = s
@@ -27,6 +27,7 @@ class Employee:
     def avg_salary(self):
         avgsal = float(Employee.salaryTotal) / Employee.count
         return avgsal
+
     # create methods to print constructor values
     def print_name(self):
         print(self.name)
@@ -39,6 +40,7 @@ class Employee:
 
     def print_department(self):
         print(self.department)
+
 
 # create Fulltime Employee class that inherits properties of employee class
 class FulltimeEmployee(Employee):
