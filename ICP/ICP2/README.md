@@ -1,3 +1,5 @@
+Scott McElfresh
+
 # IPC 2: Loops, List, Tuples, Functions in Python
 
 
