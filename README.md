@@ -2,7 +2,8 @@
 
 ## Scott McElfresh - SME1D1
 
-#Folders:
+# Folders:
+
 [IPC 1](https://github.com/sme1d1/UMKC_DeepLearning2021/tree/master/ICP/ICP1)
 
 [IPC 2](https://github.com/sme1d1/UMKC_DeepLearning2021/tree/master/ICP/ICP2)
