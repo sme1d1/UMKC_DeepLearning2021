@@ -12,3 +12,9 @@
 
 #Wiki Pages:
 
+[IPC 1 Wiki](https://github.com/sme1d1/UMKC_DeepLearning2021/wiki/ICP1)
+
+[IPC 2 Wiki](https://github.com/sme1d1/UMKC_DeepLearning2021/wiki/ICP2)
+
+[IPC 3 Wiki](https://github.com/sme1d1/UMKC_DeepLearning2021/wiki/ICP3)
+
