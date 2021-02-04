@@ -1,4 +1,3 @@
 # Scott McElfresh
 
-## Wiki Link:
-
+## [Wiki Link:](https://github.com/sme1d1/UMKC_DeepLearning2021/wiki/ICP3)
