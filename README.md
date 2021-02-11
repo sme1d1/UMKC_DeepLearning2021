@@ -4,21 +4,21 @@
 
 ## Folders:
 
-[IPC 1](https://github.com/sme1d1/UMKC_DeepLearning2021/tree/master/ICP/ICP1)
+[ICP 1](https://github.com/sme1d1/UMKC_DeepLearning2021/tree/master/ICP/ICP1)
 
-[IPC 2](https://github.com/sme1d1/UMKC_DeepLearning2021/tree/master/ICP/ICP2)
+[ICP 2](https://github.com/sme1d1/UMKC_DeepLearning2021/tree/master/ICP/ICP2)
 
-[IPC 3](https://github.com/sme1d1/UMKC_DeepLearning2021/tree/master/ICP/ICP3)
+[ICP 3](https://github.com/sme1d1/UMKC_DeepLearning2021/tree/master/ICP/ICP3)
 
-[IPC 4](https://github.com/sme1d1/UMKC_DeepLearning2021/tree/master/ICP/ICP4)
+[ICP 4](https://github.com/sme1d1/UMKC_DeepLearning2021/tree/master/ICP/ICP4)
 
 ## Wiki Pages:
 
-[IPC 1 Wiki](https://github.com/sme1d1/UMKC_DeepLearning2021/wiki/ICP1)
+[ICP 1 Wiki](https://github.com/sme1d1/UMKC_DeepLearning2021/wiki/ICP1)
 
-[IPC 2 Wiki](https://github.com/sme1d1/UMKC_DeepLearning2021/wiki/ICP2)
+[ICP 2 Wiki](https://github.com/sme1d1/UMKC_DeepLearning2021/wiki/ICP2)
 
-[IPC 3 Wiki](https://github.com/sme1d1/UMKC_DeepLearning2021/wiki/ICP3)
+[ICP 3 Wiki](https://github.com/sme1d1/UMKC_DeepLearning2021/wiki/ICP3)
 
-[IPC 4 Wiki](https://github.com/sme1d1/UMKC_DeepLearning2021/wiki/ICP4)
+[ICP 4 Wiki](https://github.com/sme1d1/UMKC_DeepLearning2021/wiki/ICP4)
 
