@@ -5,13 +5,6 @@ import matplotlib.pyplot as plt
 
 import seaborn as sns
 
-# Larger scale for plots in notebooks
-sns.set_context('notebook')
-
-# Ignore warnings
-import warnings
-warnings.filterwarnings('ignore')
-
 train = pd.read_csv("./train_preprocessed.csv")
 
 total = train['Sex'].count()
