@@ -12,6 +12,8 @@
 
 [ICP 4](https://github.com/sme1d1/UMKC_DeepLearning2021/tree/master/ICP/ICP4)
 
+[ICP 5](https://github.com/sme1d1/UMKC_DeepLearning2021/tree/master/ICP/ICP5)
+
 ## Wiki Pages:
 
 [ICP 1 Wiki](https://github.com/sme1d1/UMKC_DeepLearning2021/wiki/ICP1)
@@ -21,4 +23,7 @@
 [ICP 3 Wiki](https://github.com/sme1d1/UMKC_DeepLearning2021/wiki/ICP3)
 
 [ICP 4 Wiki](https://github.com/sme1d1/UMKC_DeepLearning2021/wiki/ICP4)
+
+[ICP 5 Wiki](https://github.com/sme1d1/UMKC_DeepLearning2021/wiki/ICP5)
+
 
