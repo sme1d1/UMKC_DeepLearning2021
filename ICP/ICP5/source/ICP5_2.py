@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn import linear_model
 from sklearn.metrics import mean_squared_error
 from sklearn.metrics import r2_score
-
+# Read data set - create data dataframe
 data = pd.read_csv('data5.csv')
 
 # Check for nulls (no nulls found)
@@ -28,7 +28,6 @@ data2['Type'] = data2['Type'].cat.codes  # use .cat accessor on Type to generate
 # print(data['Type'].head())
 # print(data2.head())
 
-
 y = np.log(data2.revenue)  # log transform on our response variable
 X = data2.drop(['revenue', 'Id'], axis=1)  # remove response variable from dataset and 'no-correlation' data
 
@@ -39,12 +38,12 @@ model = lr.fit(X_train, y_train)  # fit our data
 y_pred = lr.predict(X_test)  # create our prediction data based off our test data
 r2 = r2_score(y_test, y_pred)  # show r^2 score
 
-##Evaluate the performance and visualize results
+# Evaluate the performance and visualize results
 
 print("R^2 is: {}\n".format(r2))  # negative = bad fit
 print("RMSE is: {}\n".format(mean_squared_error(y_test, y_pred)))  # high = bad fit
 
-##visualize
+# Plot scatter graph
 plot1 = plt.figure(1)
 actual_values = y_test
 plt.scatter(y_pred, actual_values, alpha=.25, color='r')
@@ -86,7 +85,7 @@ r2 = r2_score(y_test, y_pred)
 print("R^2 is: {}\n".format(r2))  # negative = bad fit
 print('RMSE is: \n', mean_squared_error(y_test, y_pred))  # high = bad fit
 
-# Graph Data
+# Plot scatter graph with outliers removed
 plot2 = plt.figure(2)
 actual_values = y_test
 plt.scatter(y_pred, actual_values, alpha=.25, color='b')
