@@ -1,3 +1,4 @@
+# Scott McElfresh sme1d1 ICP5-3
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -19,27 +20,16 @@ data2['Type'] = data2['Type'].astype('category')  # set Type to category d-type
 data2['Type'] = data2['Type'].cat.codes  # use .cat accessor on Type to generate numerical codes
 # print(data['Type'].head())
 # print(data2.head())
-'''
-# Compute the correlation matrix
-corr = data2.corr()
 
-# Generate a mask for the upper triangle
-mask = np.triu(np.ones_like(corr, dtype=bool))
+# Compute the correlation
+numeric_features  = data2.select_dtypes(include=[np.number])
+corr = numeric_features.corr()
+print(corr['revenue'].sort_values(ascending=False)[:7],'\n')
+print(corr['revenue'].sort_values(ascending=False)[-7:])
+# P2, P6, P11, P22, P28 are highest correlated to revenue
 
-# Set up the matplotlib figure
-f, ax = plt.subplots(figsize=(11, 9))
+data3 = data2.filter(['P2', 'P6', 'P28', 'P11', 'P22', 'revenue'])
 
-# Generate a custom diverging colormap
-cmap = sns.diverging_palette(240, 10, n=9)
-
-# Draw the heatmap with the mask and correct aspect ratio
-sns.heatmap(corr,  annot=True, fmt=".1", mask=mask, cmap=cmap, vmax=.4,
-            square=False, linewidths=.5)
-plt.show()
-'''
-# P2, P6, P21, P22, P28 are highest correlated to revenue
-# X = data.drop(data.columns.difference(['P2','P6']), 1, inplace=True) #nope - doesn't work
-data3 = data2.filter(['P2', 'P6', 'P21', 'P22', 'P28', 'revenue'])
 # print(data3.head())
 y = np.log(data3.revenue)  # log transform on our response variable
 X = data3.drop(['revenue'], axis=1)  # remove response variable from dataset and 'no-correlation' data

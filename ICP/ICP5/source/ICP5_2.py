@@ -1,3 +1,4 @@
+# Scott McElfresh sme1d1 ICP 5-2
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -28,7 +29,16 @@ data2['Type'] = data2['Type'].cat.codes  # use .cat accessor on Type to generate
 # print(data['Type'].head())
 # print(data2.head())
 
+# Check if revenue is skewed and need transformation
+plot3 = plt.figure(3)
+plt.title('Revenue Skew')
+plt.hist(data2.revenue)
+
+# Perform log transform and plot
 y = np.log(data2.revenue)  # log transform on our response variable
+plot4 = plt.figure(4)
+plt.title('Revenue Log Transform')
+plt.hist(y)
 X = data2.drop(['revenue', 'Id'], axis=1)  # remove response variable from dataset and 'no-correlation' data
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42, test_size=.33)  # create test and train sets
