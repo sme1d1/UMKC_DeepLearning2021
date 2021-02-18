@@ -10,8 +10,7 @@ from sklearn.metrics import r2_score
 
 data = pd.read_csv('data5.csv')
 data = data.drop(['Id'], axis=1)
-obj_data = data.select_dtypes(include='object').copy()
-# print(obj_data.head())
+
 data2 = data
 data2['City Group'] = data2['City Group'].astype('category')  # set City group to category d-type
 data2['City Group'] = data2['City Group'].cat.codes  # use .cat accessor on City Group to generate numerical codes
@@ -22,13 +21,13 @@ data2['Type'] = data2['Type'].cat.codes  # use .cat accessor on Type to generate
 # print(data2.head())
 
 # Compute the correlation
-numeric_features  = data2.select_dtypes(include=[np.number])
+numeric_features = data2.select_dtypes(include=[np.number])
 corr = numeric_features.corr()
-print(corr['revenue'].sort_values(ascending=False)[:7],'\n')
-print(corr['revenue'].sort_values(ascending=False)[-7:])
-# P2, P6, P11, P22, P28 are highest correlated to revenue
+print(corr['revenue'].sort_values(ascending=False)[:6], '\n')
+print(corr['revenue'].sort_values(ascending=False)[-6:])
+# P2, P6, P28, P29 and City Group are highest correlated to revenue (positive and negative)
 
-data3 = data2.filter(['P2', 'P6', 'P28', 'P11', 'P22', 'revenue'])
+data3 = data2.filter(['P2', 'P6', 'P28', 'P29', 'City Group', 'revenue'])
 
 # print(data3.head())
 y = np.log(data3.revenue)  # log transform on our response variable
@@ -91,11 +90,10 @@ r2 = r2_score(y_test, y_pred)
 # Graph data
 plot2 = plt.figure(2)
 actual_values = y_test
-plt.scatter(y_pred, actual_values, alpha=.25, color='b')
+plt.scatter(y_pred, actual_values, alpha=.25, color='g')
 plt.xlabel('Predicted Revenue')
 plt.ylabel('Actual Revenue')
 plt.title('Linear Regression 5-3 - Revenue outliers removed')
 plt.figtext(.5, .8, ('RMSE is: {}'.format(mean_squared_error(y_test, y_pred))))
 plt.figtext(.5, .75, ('R^2 is: {}'.format(r2)))
 plt.show()
-

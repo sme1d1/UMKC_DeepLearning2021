@@ -18,8 +18,6 @@ print(nulls)
 '''
 # Handle non-numeric features
 
-obj_data = data.select_dtypes(include='object').copy()
-# print(obj_data.head())
 data2 = data
 data2['City Group'] = data2['City Group'].astype('category')  # set City group to category d-type
 data2['City Group'] = data2['City Group'].cat.codes  # use .cat accessor on City Group to generate numerical codes
