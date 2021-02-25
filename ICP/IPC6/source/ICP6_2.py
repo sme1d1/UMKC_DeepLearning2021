@@ -76,7 +76,8 @@ print("Elbow method determines number of clusters to be: {}".format(kl.elbow))
 # get silhouette score for 4 clusters
 km = KMeans(n_clusters=kl.elbow, **kmeans_kwargs)  # create kmeans model with 4 clusters
 km.fit(x_scaled)  # fit scaled data to model
-score = silhouette_score(x_scaled, km.labels_)  # calculate silhouette score of data with labels. (average of all samples)
+score = silhouette_score(x_scaled, km.labels_)
+# calculate silhouette score of data with labels. (average of all samples)
 print("Silhouette score for {} clusters: {}".format(kl.elbow, score))
 
 plt.show()  # display our plot
