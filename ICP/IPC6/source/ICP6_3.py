@@ -34,7 +34,7 @@ kmeans_kwargs = {"init": "random", "n_init": ninit, "max_iter": 300, "random_sta
 ssd = []
 for k in range(1, ninitplus):  # for loop ninitplus times
     km = KMeans(n_clusters=k, **kmeans_kwargs)  # try 1 to 10 cluster sizes for kmeans
-    km.fit(x_scaled)  # fit data to model
+    km.fit(df)  # fit data to model
     ssd.append(km.inertia_)  # append sse array with lowest sse value
 
 # use knee-locator to help find optimal cluster amount with elbow method
