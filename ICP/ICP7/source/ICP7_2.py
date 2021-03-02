@@ -59,8 +59,8 @@ with open('input.txt', 'r', encoding='utf-8') as reader:
     wtokens = word_tokenize(bigString)  # word tokenization
     # print(stokens)
     # for s in stokens: # print contents of our sentence token list
-    # print(s)
-    # for w in wtokens: # print contents of our word token list
+    #    print(s)
+    # for w in wtokens:  # print contents of our word token list
     #    print(w)
 
     # POS
@@ -80,7 +80,7 @@ with open('input.txt', 'r', encoding='utf-8') as reader:
         stemlist_P.append((w + " : " + ps.stem(w)))  # append to our lists the word and our stemming
         stemlist_L.append((w + " : " + ls.stem(w)))
         stemlist_S.append((w + " : " + ss.stem(w)))
-    print(stemlist_P[5:10])
+    # print(stemlist_P[5:10])
 
     # Lemmatization
     lemlist = []  # create list for lemmatization output
@@ -92,7 +92,7 @@ with open('input.txt', 'r', encoding='utf-8') as reader:
     # Trigrams
     trilist = ngrams(bigString.split(), 3)  # set up Trigrams
     # for trips in trilist:
-    #    print(trips[0:10])
+    #    print(trips)
 
     # Named Entity Recognition
     nerlist = []  # create list for NER output
