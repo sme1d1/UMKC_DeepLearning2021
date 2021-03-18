@@ -1,3 +1,5 @@
+# Scott McElfresh sme1d1 ICP 9
+
 from keras import Sequential
 from keras.datasets import mnist
 import numpy as np
@@ -44,12 +46,13 @@ print("Baseline error: %.2f%%" % (100 - score[1] * 100))
 infer = str(np.argmax(model.predict(test_data[0].reshape(1, 784))))
 labelsAndTrainingImages = list(zip(test_images, test_labels))
 
+# Plot single image and model estimation
 plot4 = plt.figure(4)
 plt.axis('off')
 plt.imshow(test_images[0], cmap='gray', interpolation='nearest', aspect='equal')
 plt.title("Label " + str(test_labels[0]) + "\n" + "Infer " + infer)
 
-# Plot first twenty images, labels, and inference
+# Plot first twenty images, labels, and inferen
 plot1 = plt.figure(figsize=(10, 10))
 for index, (image, label) in enumerate(labelsAndTrainingImages[:20]):
     plt.subplot(4, 5, index + 1)
