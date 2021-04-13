@@ -8,12 +8,12 @@ from keras import backend as K
 from keras.models import load_model
 import matplotlib.pyplot as plt
 import numpy as np
-
+from numpy.random import seed
+seed(7)# keras seed fixing
+import tensorflow as tf
+tf.random.set_seed(7)# tensorflow seed fixing
 K.set_image_data_format('channels_last')
 
-# fix random seed for reproducibility
-seed = 7
-numpy.random.seed(seed)
 # load data
 (X_train, y_train), (X_test, y_test) = cifar10.load_data()
 # normalize inputs from 0-255 to 0.0-1.0
@@ -28,7 +28,9 @@ y_test = np_utils.to_categorical(y_test)
 # load our model
 model = load_model('cifar10_model.h5')
 # evaluate the model
+epochs = 5
 scores = model.evaluate(X_test, y_test, verbose=0)
+model.save('cifar10_model.h5')
 print("Accuracy: %.2f%%" % (scores[1] * 100))
 
 # print categories
@@ -44,3 +46,4 @@ for index, (image, label) in enumerate(labelsAndTrainingImages[:6]):
     plt.imshow(image, interpolation='nearest')
     plt.title("Label " + '%i' % result[index])
 plt.show()
+
