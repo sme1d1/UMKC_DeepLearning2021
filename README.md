@@ -3,6 +3,8 @@
 ## Scott McElfresh - SME1D1
 
 ## Folders:
+[ICP 12](https://github.com/sme1d1/UMKC_DeepLearning2021/tree/master/ICP/ICP12)
+
 [ICP 11](https://github.com/sme1d1/UMKC_DeepLearning2021/tree/master/ICP/ICP11)
 
 [ICP 10](https://github.com/sme1d1/UMKC_DeepLearning2021/tree/master/ICP/ICP10)
@@ -26,6 +28,8 @@
 [ICP 1](https://github.com/sme1d1/UMKC_DeepLearning2021/tree/master/ICP/ICP1)
 
 ## Wiki Pages:
+[ICP 12 Wiki](https://github.com/sme1d1/UMKC_DeepLearning2021/wiki/ICP12)
+
 [ICP 11 Wiki](https://github.com/sme1d1/UMKC_DeepLearning2021/wiki/ICP11)
 
 [ICP 10 Wiki](https://github.com/sme1d1/UMKC_DeepLearning2021/wiki/ICP10)
