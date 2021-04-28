@@ -26,11 +26,11 @@ x_test = x_test.astype('float32') / 255.
 x_train = x_train.reshape((len(x_train), np.prod(x_train.shape[1:])))
 x_test = x_test.reshape((len(x_test), np.prod(x_test.shape[1:])))
 
-# Encoder model
+# Encoder model (for predictions to display test images)
 encoder = Model(input_img, encoded)
 encoded_input = Input(shape=(encoding_dim,))
 
-# Decoder model -
+# Decoder model - take in last layer of autoencoder
 decoder_layer = autoencoder.layers[-1]
 # Create the decoder model
 decoder = Model(encoded_input, decoder_layer(encoded_input))
@@ -55,7 +55,6 @@ n = 5  # How many images to display
 plot1 = plt.figure(figsize=(16, 4))
 for i in range(n):
     # Display original
-
     ax = plt.subplot(2, n, i + 1)
     plt.imshow(x_test_noisy[i].reshape(28, 28))
     plt.gray()
@@ -69,7 +68,7 @@ for i in range(n):
     ax.get_xaxis().set_visible(False)
     ax.get_yaxis().set_visible(False)
 
-print((history.history.keys()))
+#print((history.history.keys()))
 # Accuracy Plot
 
 plot2 = plt.figure(2)
